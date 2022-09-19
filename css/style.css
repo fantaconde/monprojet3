@@ -1,0 +1,548 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*menu1*/
+.main {
+  background-color: #f6f6f6;
+  border-bottom: 40px;
+  margin-top: 250px;
+  border-radius: 32px 32px 0 0;
+}
+
+/*menu2*/
+.menu2__centre {
+  background-color: #f6f6f6;
+  border-bottom: 40px;
+}
+
+/*menu3*/
+.menu3__centre {
+  background-color: #f6f6f6;
+  border-bottom: 40px;
+}
+
+/*menu4*/
+.menu4__centre {
+  background-color: #f6f6f6;
+  border-bottom: 40px;
+}
+
+.chargement {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #ffffff;
+  animation: arret 3s both;
+  z-index: 10;
+}
+.chargement__tourne {
+  border-radius: 50%;
+  border-top: 10px solid #99e2d0;
+  border-left: 10px solid #9356dc;
+  border-bottom: 10px solid #ff79da;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  animation: tournement 0.5s 0.1s 3 linear;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.header {
+  display: block;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.header__title {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+}
+.header .legrandtitre {
+  font-weight: 23px;
+}
+.header menu1 {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+}
+
+.location {
+  background: #eaeaea;
+  padding: 16px;
+  display: block;
+  justify-content: center;
+  box-shadow: 0px -1px 3px 0px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+
+/*menu1*/
+.header__menu1 {
+  display: flex;
+  font-family: "Shrikhand", cursive;
+  align-items: center;
+  background-color: #f6f6f6;
+  font-family: "Shrikhand", cursive;
+  position: relative;
+  justify-content: center;
+  background: white;
+}
+.header__menu1 a {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+}
+
+/*menu2*/
+.header__menu2 {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  font-family: "Shrikhand", cursive;
+}
+
+/*menu3*/
+.header__menu3 {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  font-family: "Shrikhand", cursive;
+  position: relative;
+  justify-content: center;
+}
+.header__menu3 a {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+}
+
+/*menu4*/
+.header__menu4 {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  font-family: "Shrikhand", cursive;
+  position: relative;
+  justify-content: center;
+}
+.header__menu4 a {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+}
+
+.footer {
+  line-height: 40px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #353535;
+  color: white;
+}
+.footer h3 {
+  font-family: "Shrikhand", cursive;
+}
+.footer__liens a {
+  display: block;
+  color: white;
+  margin: 10px;
+}
+.footer__liens a i {
+  margin-right: 10px;
+}
+
+.bouton {
+  background: linear-gradient(to top, #9356dc, #ff79da 100%);
+  color: white;
+  font-weight: 700;
+  height: 47px;
+  margin: 20px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+}
+
+.bouton__explorer {
+  display: flex;
+  justify-content: center;
+}
+
+.fonctionnements {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.fonctionnements__bouton {
+  background-color: #f6f6f6;
+  color: black;
+  font-weight: 700;
+  height: 60px;
+  text-align: start;
+  padding: 5px;
+  border: none;
+  border-radius: 13px;
+  font-size: 16px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+}
+.fonctionnements__bouton__nombre {
+  z-index: 1;
+  position: relative;
+  left: -9px;
+  line-height: 1.3;
+  color: white;
+}
+.fonctionnements__bouton__nombre::before {
+  z-index: -1;
+  position: absolute;
+  border-radius: 100%;
+  border: none;
+  width: 20px;
+  height: 20px;
+  content: "";
+  left: -5px;
+  background-color: #9356dc;
+}
+.fonctionnements__bouton i {
+  margin-right: 20px;
+  margin-left: 10px;
+  color: grey;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 20px 20px 60px;
+}
+.restaurants__h2 {
+  margin-bottom: 20px;
+}
+.restaurants__flexbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.restaurant__carte {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px #dedede;
+  overflow: hidden;
+}
+.restaurant__carte__figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  line-height: 1.5;
+  padding: 10px;
+  background-color: white;
+}
+.restaurant__carte__nouveau {
+  background-color: #99e2d0;
+  position: absolute;
+  color: #008766;
+  right: 20px;
+  top: 20px;
+  padding: 5px 10px;
+}
+
+.restaurant__carte__coeur {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+.restaurant__carte__coeur:hover .coeur_remplit {
+  opacity: 1;
+}
+.restaurant__carte__coeur:hover .coeur_vide {
+  opacity: 0;
+}
+.restaurant__carte__coeur i {
+  font-size: 22px;
+}
+.restaurant__carte__coeur .coeur_remplit {
+  position: absolute;
+  animation: heart 500ms 0s ease-in forwards;
+  background: linear-gradient(to top, #9356dc, #ff79da 100%);
+  opacity: 0;
+  overflow: hidden;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  transform-origin: bottom;
+}
+
+.les-cartes {
+  object-fit: cover;
+  max-height: 130px;
+  height: 100%;
+}
+
+/*l'image des pages*/
+.img {
+  top: 70px;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+}
+.img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+/*menu*/
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  justify-content: center;
+  padding: 20px;
+}
+.menu__titre {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+}
+.menu__commander {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.menu__commander__btn {
+  background: linear-gradient(to top, #9356dc, #ff79da 100%);
+  color: white;
+  font-weight: 700;
+  height: 43px;
+  margin: 20px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  width: 153px;
+}
+.menu__boutons {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.menu__boutons > p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu__boutons > h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 17px;
+  justify-content: stretch;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu__boutons > h3::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 42px;
+  background-color: #99e2d0;
+  margin-top: 3px;
+}
+.menu__bouton {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  cursor: pointer;
+  border-radius: 13px;
+  overflow: hidden;
+}
+.menu__bouton__contenu {
+  position: relative;
+  padding: 10px;
+  user-select: none;
+  width: 100%;
+}
+.menu__bouton:hover .menu__bouton__titre {
+  width: calc(100% - 60px);
+}
+.menu__bouton:hover .menu__bouton__text {
+  width: calc(100% - 60px);
+}
+.menu__bouton:hover .menu__bouton__check {
+  transform: translateX(-60px);
+}
+.menu__bouton:hover .menu__bouton__check i {
+  animation: tourne-rond 350ms ease-in forwards;
+}
+.menu__bouton__titre {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1.6;
+  font-size: 18px;
+  width: 100%;
+  transition: width ease-in-out 350ms;
+}
+.menu__bouton__text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+  transition: width ease-in-out 350ms;
+}
+.menu__bouton__text p {
+  font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+.menu__bouton__text__prix {
+  font-weight: 700;
+}
+.menu__bouton__check i {
+  color: white;
+  font-size: 22px;
+}
+.menu__bouton__check {
+  background: #99e2d0;
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  align-items: center;
+  border-radius: 0 13px 13px 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  height: 100%;
+  overflow: hidden;
+  transition: transform ease-in-out 350ms;
+}
+
+#menu-animation-1 {
+  animation: 250ms 100ms linear menu-animation-cartes both;
+}
+
+#menu-animation-2 {
+  animation: 350ms 200ms linear menu-animation-cartes both;
+}
+
+#menu-animation-3 {
+  animation: 350ms 300ms linear menu-animation-cartes both;
+}
+
+#menu-animation-4 {
+  animation: 350ms 400ms linear menu-animation-cartes both;
+}
+
+#menu-animation-5 {
+  animation: 350ms 500ms linear menu-animation-cartes both;
+}
+
+#menu-animation-6 {
+  animation: 350ms 600ms linear menu-animation-cartes both;
+}
+
+#menu-animation-7 {
+  animation: 350ms 700ms linear menu-animation-cartes both;
+}
+
+#menu-animation-8 {
+  animation: 350ms 800ms linear menu-animation-cartes both;
+}
+
+#menu-animation-9 {
+  animation: 350ms 900ms linear menu-animation-cartes both;
+}
+
+#menu-animation-10 {
+  animation: 350ms 1000ms linear menu-animation-cartes both;
+}
+
+/*animations scss*/
+@keyframes tournement {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes arret {
+  from {
+    opacity: 1;
+    z-index: 10;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes bouton-check {
+  0% {
+    margin-right: -300px;
+  }
+  35% {
+    margin-right: -150px;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+@keyframes menu-animation-cartes {
+  from {
+    opacity: 0;
+    transform: translateY(15%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes tourne-rond {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

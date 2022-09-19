@@ -1,0 +1,50 @@
+/*animations scss*/
+
+@keyframes tournement {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes arret {
+	from {
+		opacity: 1;
+		z-index: 10;
+	}
+	to {
+		opacity: 0;
+		z-index: -10;
+	}
+}
+@keyframes bouton-check {
+	0% {
+		margin-right: -300px;
+	}
+	35% {
+		margin-right: -150px;
+	}
+	100% {
+		margin-right: 0;
+	}
+}
+@keyframes menu-animation-cartes {
+	from {
+		opacity: 0;
+		transform: translateY(15%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes tourne-rond {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(1turn);
+	}
+}

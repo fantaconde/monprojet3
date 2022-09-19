@@ -1,0 +1,132 @@
+.bouton {
+	background: linear-gradient(to top, #9356dc, #ff79da 100%);
+	color: white;
+	font-weight: 700;
+	height: 47px;
+	margin: 20px 0;
+	padding: 10px;
+	border: none;
+	border-radius: 24px;
+	font-size: 16px;
+}
+
+.bouton__explorer {
+	display: flex;
+	justify-content: center;
+}
+
+.fonctionnements {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-top: 20px;
+	justify-content: center;
+	padding: 20px;
+
+	&__bouton {
+		background-color: #f6f6f6;
+		color: black;
+		font-weight: 700;
+		height: 60px;
+		text-align: start;
+		padding: 5px;
+		border: none;
+		border-radius: 13px;
+		font-size: 16px;
+		box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+		&__nombre {
+			z-index: 1;
+			position: relative;
+			left: -9px;
+			line-height: 1.3;
+			color: white;
+			&::before {
+				z-index: -1;
+				position: absolute;
+				border-radius: 100%;
+				border: none;
+				width: 20px;
+				height: 20px;
+				content: "";
+				left: -5px;
+
+				background-color: #9356dc;
+			}
+		}
+		& i {
+			margin-right: 20px;
+			margin-left: 10px;
+			color: grey;
+		}
+	}
+}
+
+.restaurants {
+	background-color: #f6f6f6;
+	padding: 20px 20px 60px;
+	&__h2 {
+		margin-bottom: 20px;
+	}
+	&__flexbox {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+.restaurant__carte {
+	position: relative;
+	@include bordure-carte;
+	&__figcaption {
+		display: flex;
+		justify-content: space-between;
+		align-self: center;
+		line-height: 1.5;
+		@include carte-figcaption;
+	}
+
+	&__nouveau {
+		@include carte-nouveau;
+	}
+}
+
+.restaurant__carte__coeur {
+	width: 32px;
+	height: 32px;
+	position: relative;
+	font-weight: 300;
+
+	display: flex;
+	align-items: center;
+
+	&:hover .coeur_remplit {
+		opacity: 1;
+	}
+	&:hover .coeur_vide {
+		opacity: 0;
+	}
+
+	& i {
+		font-size: 22px;
+	}
+
+	.coeur_remplit {
+		position: absolute;
+
+		animation: heart 500ms 0s ease-in forwards;
+		background: linear-gradient(to top, #9356dc, #ff79da 100%);
+		opacity: 0;
+
+		overflow: hidden;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-repeat: no-repeat;
+		transform-origin: bottom;
+	}
+}
+
+.les-cartes {
+	object-fit: cover;
+	max-height: 130px;
+	height: 100%;
+}

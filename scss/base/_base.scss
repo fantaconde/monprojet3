@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/*menu1*/
+.main {
+	background-color: #f6f6f6;
+	border-bottom: 40px;
+	margin-top: 250px;
+	border-radius: 32px 32px 0 0;
+}
+
+/*menu2*/
+.menu2__centre {
+	background-color: #f6f6f6;
+	border-bottom: 40px;
+}
+
+/*menu3*/
+.menu3__centre {
+	background-color: #f6f6f6;
+	border-bottom: 40px;
+}
+
+/*menu4*/
+.menu4__centre {
+	background-color: #f6f6f6;
+	border-bottom: 40px;
+}

@@ -1,0 +1,19 @@
+@mixin bordure-carte {
+	border-radius: 20px;
+	box-shadow: 0 10px 15px #dedede;
+	overflow: hidden;
+}
+
+@mixin carte-figcaption {
+	padding: 10px;
+	background-color: white;
+}
+
+@mixin carte-nouveau {
+	background-color: #99e2d0;
+	position: absolute;
+	color: #008766;
+	right: 20px;
+	top: 20px;
+	padding: 5px 10px;
+}
