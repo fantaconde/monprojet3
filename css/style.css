@@ -44,6 +44,11 @@ a {
   border-bottom: 40px;
 }
 
+@media screen and (min-width: 769px) {
+  main {
+    padding: 0 5%;
+  }
+}
 .chargement {
   width: 100%;
   height: 100%;

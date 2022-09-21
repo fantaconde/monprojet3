@@ -43,3 +43,9 @@ a {
 	background-color: #f6f6f6;
 	border-bottom: 40px;
 }
+
+@media screen and (min-width: 769px) {
+	main {
+		padding: 0 5%;
+	}
+}
