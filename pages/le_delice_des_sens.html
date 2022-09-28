@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<meta charset="utf-8" />
 
 		<title>Oh my Food</title>
@@ -29,7 +30,10 @@
 			<section class="menu">
 				<div class="menu__titre">
 					<h2 class="menu_titre2">Le délices des sens</h2>
-					<i class="fa-regular fa-heart"></i>
+					<span class="restaurant__carte__coeur">
+						<i class="fa-regular fa-heart coeur_vide"></i>
+						<i class="fa-solid fa-heart coeur_remplit"></i>
+					</span>
 				</div>
 				<div class="menu__boutons">
 					<h3>Entrées</h3>
@@ -154,7 +158,7 @@
 				</div>
 
 				<div class="menu__commander">
-					<button class="menu__commander__btn">Commanders</button>
+					<button class="menu__commander__btn">Commander</button>
 				</div>
 			</section>
 		</main>

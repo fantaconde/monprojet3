@@ -45,8 +45,12 @@
 			border: none;
 			border-radius: 24px;
 			font-size: 16px;
-
+			cursor: pointer;
 			width: 153px;
+			&:hover {
+				background: linear-gradient(to top, #9356dc, #eebde0 100%);
+				box-shadow: 4px 4px 4px #ccc;
+			}
 		}
 	}
 	&__boutons {
